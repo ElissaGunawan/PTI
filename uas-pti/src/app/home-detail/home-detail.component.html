@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	<a class="navbar-brand text-white" routerLink="/home">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+
+	<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item active">
+				<a class="nav-link text-white" routerLink="/update">Update <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link text-white" routerLink="/registrasi">LogOut</a>
+			</li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+		<input class="form-control mr-sm-2 bg-light" type="search" placeholder="Search">
+		<button class="btn btn-outline-light my-2 my-sm-0 text-white" type="submit">Search</button>
+		
+    	</form>
+  	</div>
+</nav>
+	<div class="p-2 bg-secondary col-20 mt-6 font-small">
+		<h3 class="text-center bold text-white">HALAMAN DETAIL</h3>
+	</div>
+	<div class="col-20 mt-6 bg-light">
+		<div *ngIf="mahasiswa" class="container col-centered card col-md-18 p-5">
+			<div class="row col-md-20 bg-light">
+				<div class="col-sm-4 d-flex justify-content-center">
+					<img [src]="mahasiswa.result.foto" class="card-img" width="1000px"/><br/>
+				</div>
+			
+				<div class="col d-flex justify-content-center">
+					<div class="card-body col-md-20">
+						<p class="card-text">NIM : {{mahasiswa.result.nim}}</p>
+						<p class="card-text">Nama Lengkap : {{mahasiswa.result.nama_lengkap}}</p>
+						<p class="card-text">Email : {{mahasiswa.result.email}}</p>
+						<p class="card-text">Alamat : {{mahasiswa.result.alamat}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="p-5" ></div>
+			<footer class="page-footer font-small bg-secondary text-white">
+				<div class="footer-copyright text-center py-3">© 2018 Copyright:
+					<a href="https://mdbootstrap.com/education/bootstrap/" class="text-white"> MDBootstrap.com</a>
+				</div>
+			</footer>
+		
+	</div>

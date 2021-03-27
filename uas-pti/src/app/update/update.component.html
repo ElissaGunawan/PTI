@@ -1,0 +1,23 @@
+<form class="text-center" [formGroup]="updateUser">
+	<div>
+		<h1>Update</h1>
+		Username<br/>
+		<input type="text" formControlName="user_name"><br/>
+		Telepon<br/>
+		<input type="text" formControlName="telepon"><br/>
+		Email<br/>
+		<input type="email" formControlName="email"><br/>
+		Nama Lengkap<br/>
+		<input type="text" formControlName="nama_lengkap"><br/>
+		Alamat<br/>
+		<input type="text" formControlName="alamat"><br/>
+		Tanggal Lahir<br/>
+		<input type="date" formControlName="tanggal_lahir"><br/>
+		Foto<br/>
+		<input type="text" formControlName="foto"><br/>
+		Password<br/>
+		<input type="password" formControlName="password"><br/><br/>
+	</div>
+  <input type="submit" value="Register" (click)="get()" class="btn btn-primary"> 
+  <a routerLink="/login" routerLinkActive="active"> &nbsp; Login</a>
+</form>

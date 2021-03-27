@@ -1,0 +1,27 @@
+<div class="container">
+	<form class="text-center bg-dark text-white">
+		<h1>Register</h1>
+		<hr class="border"/>
+		<p></p>
+		<div>
+			Username<br/>
+			<input type="text" name="user_name" [(ngModel)]="register.username"><br/>
+			Telepon<br/>
+			<input type="text" name="telepon" [(ngModel)]="register.telepon"><br/>
+			Email<br/>
+			<input type="email" name="email" [(ngModel)]="register.email"><br/>
+			Nama Lengkap<br/>
+			<input type="text" name="nama_lengkap" [(ngModel)]="register.nama_lengkap"><br/>
+			Alamat<br/>
+			<input type="text" name="alamat" [(ngModel)]="register.alamat"><br/>
+			Tanggal Lahir<br/>
+			<input type="date" name="tanggal_lahir" [(ngModel)]="register.tanggal_lahir"><br/>
+			Foto<br/>
+			<input type="text" name="foto" [(ngModel)]="register.foto"><br/>
+			Password<br/>
+			<input type="password" name="password" [(ngModel)]="register.password"><br/><br/>
+		</div>
+		<p><input type="submit" value="Register" (click)="signUp()" class="btn btn-primary">
+		Back To <a routerLink="/login" routerLinkActive="active">Login</a></p>
+	</form>
+</div>

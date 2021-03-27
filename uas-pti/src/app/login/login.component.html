@@ -1,0 +1,16 @@
+<form class="text-center col-md-12 " style= "background: #008080; color: white; top: 150px">
+  <br>
+  <h1>Login</h1>
+  Username<br/>
+  <input type="text" name="user_name" [(ngModel)]="dataLogin.username"><br/>
+  Password<br/>
+  <input type="password" name="password" [(ngModel)]="dataLogin.password"><br/>
+  Remember Me<br/>
+  <input type="radio" name="true">
+  <label for="true">True &nbsp;</label>
+  <input type="radio" name="false">
+  <label for="false">False</label><br/>
+  <input type="submit" value="Login" (click)="Login()">
+  <a routerLink="/register" routerLinkActive="active" class="text-white">&nbsp; Register</a>
+  <br><br>
+</form>

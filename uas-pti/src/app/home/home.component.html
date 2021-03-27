@@ -1,0 +1,13 @@
+<div>
+	<input type="submit" value="Logout" (click)="logout()" class="btn btn-primary" align="right">
+</div>
+<div *ngIf="home" class="row" style="background: #008080">
+  <div class="col-sm-4" *ngFor="let mhs of home.result.mahasiswa">
+    <div class="card">
+      <div class="card-body">
+		<p routerLink="./{{mhs.nim}}" class="card-text">NIM : {{mhs.nim}}</p>
+		<p routerLink="./{{mhs.nim}}" class="card-text">Nama: {{mhs.nama_lengkap}}</p>
+      </div>
+    </div>
+  </div>
+</div>
